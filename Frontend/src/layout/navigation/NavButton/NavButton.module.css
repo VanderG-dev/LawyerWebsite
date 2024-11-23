@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 170px;
+  background-color: #e3e5eb;
+  margin: 5px;
+  border-radius: 5px;
+  z-index: 3;
+  transition: 0.5s;
+  box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  background-color: #ecedf4;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.417);
+}
+
+.button:hover h1 {
+  color: rgb(79, 55, 55);
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.text {
+  color: #6b5f5f;
+  font-size: 24px;
+  z-index: 3;
+}

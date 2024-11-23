@@ -1,0 +1,135 @@
+header {
+  background-color: #1c171700;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+}
+
+.nav-box {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  margin-left: 60px;
+
+  height: 60px;
+  border-radius: 20px;
+}
+
+.second-nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  right: 80px;
+  height: 60px;
+  width: auto;
+  z-index: 3;
+
+  margin-left: 10px;
+}
+
+.nav-text {
+  color: white;
+  -webkit-text-stroke: 0.5px;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+  width: auto;
+  margin-left: 15px;
+  height: 44px;
+  transition: 0.5s;
+}
+
+.nav-second-button h1 {
+  color: gray;
+  transition: 0.2s;
+}
+
+.nav-second-button h1:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-second-button::before {
+  content: "";
+  position: absolute;
+  margin-top: 40px;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(to right, #2c00dd00, #a42db8, #2c00dd00);
+  transition: 0.2s;
+}
+
+.nav-second-button:hover::before {
+  width: 90px;
+}
+
+.nav-main-button::before {
+  content: "";
+  position: absolute;
+  margin-top: 40px;
+
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(to right, #2c00dd00, #c207e3, #2c00dd00);
+}
+
+.favorite-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-btn {
+  margin-right: 5px;
+}
+
+.search-btn::before,
+.favorite-btn::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 30%;
+
+  z-index: -1;
+  background-color: #ffffff16;
+  transition: 0.2s;
+}
+
+.search-btn:hover::before,
+.favorite-btn:hover::before {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-half-rounded {
+  width: 150px;
+
+  background: linear-gradient(to right, #3f3daf, #c143b5);
+  border-radius: 50px 0px 50px 0px;
+}
+
+.nav-half-rounded:hover {
+  border-radius: 0px 50px 0px 50px;
+}
+
+.nav-line {
+  margin-left: 15px;
+  height: 45px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.159);
+}

@@ -1,0 +1,14 @@
+.content-box-white {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
