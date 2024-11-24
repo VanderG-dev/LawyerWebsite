@@ -46,7 +46,6 @@
 
 .arrow {
   box-sizing: border-box;
-
   border-radius: 50%;
   padding: 10px;
   overflow: hidden;
@@ -54,6 +53,7 @@
   transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
   backdrop-filter: blur(3px);
+  margin-top: 140px;
   z-index: 3;
 }
 @keyframes float {

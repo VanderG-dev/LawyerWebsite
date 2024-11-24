@@ -4,6 +4,7 @@ import Nav from "../../layout/navigation/Nav/Nav.jsx";
 import About from "./About/About.jsx";
 import Advantages from "./Advantages/Advantages.jsx";
 import WorkPlan from "./WorkPlan/WorkPlan.jsx";
+import MainForm from "../../components/forms/MainForm/MainForm.jsx";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
         <About></About>
         <Advantages></Advantages>
         <WorkPlan></WorkPlan>
+        <MainForm></MainForm>
       </main>
     </>
   );

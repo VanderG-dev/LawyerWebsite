@@ -13,7 +13,7 @@ function Nav() {
 
           <NavButton text="Автоюрист" image="car-insurance.png"></NavButton>
           <NavButton text="Арбитражные дела" image="tie.png"></NavButton>
-          <NavButton text="Недвижимость, земельные споры" image="hook.png"></NavButton>
+          <NavButton text="Недвижимость" image="hook.png"></NavButton>
           <NavButton text="Жилищные споры" image="house.png"></NavButton>
 
           <NavButton text="Военное право" image="helmet.png"></NavButton>

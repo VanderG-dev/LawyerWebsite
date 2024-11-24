@@ -10,6 +10,7 @@ function About() {
           backgroundSize: "cover",
         }}
       >
+        <div className={styles.line}></div>
         <h1 className={styles.main_text}>о компании</h1>
 
         <h2 className={styles.second_text}>
