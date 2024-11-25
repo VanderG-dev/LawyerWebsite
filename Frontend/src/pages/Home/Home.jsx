@@ -1,6 +1,6 @@
 import Header from "../../layout/Header/Header.jsx";
-import HomeContent from "./HomeContent.jsx";
-import Nav from "../../layout/navigation/Nav/Nav.jsx";
+import TopSection from "./TopSection.jsx";
+import NavSection from "../../layout/navigation/NavSection/NavSection.jsx";
 import About from "./About/About.jsx";
 import Advantages from "./Advantages/Advantages.jsx";
 import WorkPlan from "./WorkPlan/WorkPlan.jsx";
@@ -11,8 +11,8 @@ function HomePage() {
     <>
       <main>
         <Header></Header>
-        <HomeContent></HomeContent>
-        <Nav></Nav>
+        <TopSection></TopSection>
+        <NavSection></NavSection>
         <About></About>
         <Advantages></Advantages>
         <WorkPlan></WorkPlan>

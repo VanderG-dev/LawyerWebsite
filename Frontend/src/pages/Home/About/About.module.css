@@ -1,24 +1,14 @@
-.line {
-  position: absolute;
-  margin-right: 1050px;
-  margin-top: 50px;
-
-  height: 450px;
-  width: 3px;
-  background-color: #e8e8e8;
-  z-index: 5;
-}
-
-.box {
+.container {
+  position: relative;
   height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   z-index: 1;
 }
-.box::after {
+
+.container::after {
   content: "";
   position: absolute;
   backdrop-filter: blur(3px);
@@ -32,6 +22,17 @@
     rgba(0, 0, 0, 0.535)
   );
 }
+
+.line {
+  position: absolute;
+  margin-right: 1050px;
+  margin-top: 50px;
+  height: 450px;
+  width: 3px;
+  background-color: #e8e8e8;
+  z-index: 5;
+}
+
 .main_text {
   color: #ececec;
   font-size: 40px;

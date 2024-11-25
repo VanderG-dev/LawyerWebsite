@@ -1,16 +1,11 @@
 import styles from "./MainForm.module.css";
 import MainButton from "../../elements/MainButton/MainButton";
-
+import SectionImage from "../../../components/elements/SectionImage/SectionImage";
 function MainForm() {
   return (
     <>
-      <div
-        className={styles.box}
-        style={{
-          backgroundImage: "url(/images/FormBG.png)",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className={styles.box}>
+        <SectionImage image="Form"></SectionImage>
         <form action="submit" className={styles.form}>
           <h1 className={styles.main_text}>Получить бесплатную консультацию</h1>
           <h2 className={styles.second_text}>

@@ -2,14 +2,14 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: white;
-  min-height: 600px;
-  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .nav-flex {
   display: flex;
   justify-content: center;
+
   flex-wrap: wrap;
 }

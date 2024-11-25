@@ -1,28 +1,26 @@
 import "./Nav.css";
-import NavButton from "../NavButton/NavButton.jsx";
+import NavButton from "../NavButton/NavButton";
 
-function Nav() {
+function Nav({ setWindow }) {
   return (
-    <>
-      <div className="content-box-white">
-        <div className="nav-flex">
-          <NavButton text="Семейные споры" image="family.png"></NavButton>
-          <NavButton text="Банковские споры" image="bank.png"></NavButton>
-          <NavButton text="Трудовые споры" image="settings.png"></NavButton>
-          <NavButton text="Взыскание задолженностей" image="save-money.png"></NavButton>
+    <div className="content-box-white">
+      <div className="nav-flex">
+        <NavButton setWindow={setWindow} text="Семейные споры" image="family.png" />
+        <NavButton setWindow={setWindow} text="Банковские споры" image="bank.png" />
+        <NavButton setWindow={setWindow} text="Трудовые споры" image="settings.png" />
+        <NavButton setWindow={setWindow} text="Взыскание задолженностей" image="save-money.png" />
 
-          <NavButton text="Автоюрист" image="car-insurance.png"></NavButton>
-          <NavButton text="Арбитражные дела" image="tie.png"></NavButton>
-          <NavButton text="Недвижимость" image="hook.png"></NavButton>
-          <NavButton text="Жилищные споры" image="house.png"></NavButton>
+        <NavButton setWindow={setWindow} text="Автоюрист" image="car-insurance.png" />
+        <NavButton setWindow={setWindow} text="Арбитражные дела" image="tie.png" />
+        <NavButton setWindow={setWindow} text="Недвижимость" image="hook.png" />
+        <NavButton setWindow={setWindow} text="Жилищные споры" image="house.png" />
 
-          <NavButton text="Военное право" image="helmet.png"></NavButton>
-          <NavButton text="Медицинские споры" image="hospital.png"></NavButton>
-          <NavButton text="Наследственное право" image="social-justice.png"></NavButton>
-          <NavButton text="Защита прав потребителей" image="user.png"></NavButton>
-        </div>
+        <NavButton setWindow={setWindow} text="Военное право" image="helmet.png" />
+        <NavButton setWindow={setWindow} text="Медицинские споры" image="hospital.png" />
+        <NavButton setWindow={setWindow} text="Наследственное право" image="social-justice.png" />
+        <NavButton setWindow={setWindow} text="Защита прав потребителей" image="user.png" />
       </div>
-    </>
+    </div>
   );
 }
 

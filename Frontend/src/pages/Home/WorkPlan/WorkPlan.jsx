@@ -1,16 +1,13 @@
 import styles from "./WorkPlan.module.css";
 import lineNumbers from "../../../assets/images/lineNumbers.png";
+import SectionImage from "../../../components/elements/SectionImage/SectionImage";
 
 function WorkPlan() {
   return (
     <>
-      <div
-        className={styles.box}
-        style={{
-          backgroundImage: "url(/images/WorkPlanBG.png)",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className={styles.container}>
+        <SectionImage image="WorkPlan"></SectionImage>
+
         <img src={lineNumbers} alt="lineNumbers" className={styles.line} />
         <h1 className={styles.main_text}>Как мы работаем</h1>
         <h2 className={styles.second_text}>ознакомьтесь с этапами нашей работы</h2>

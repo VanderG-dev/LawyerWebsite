@@ -1,25 +1,14 @@
-.line {
-  position: absolute;
-  margin-right: 850px;
-  margin-top: 50px;
-
-  z-index: 5;
-}
-
-.box {
+.container {
+  position: relative;
   height: 700px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   z-index: 1;
 }
-.box::after {
+.container::after {
   content: "";
   position: absolute;
   backdrop-filter: blur(5px);
@@ -32,6 +21,14 @@
     rgba(0, 0, 0, 0.526),
     rgba(0, 0, 0, 0.741)
   );
+}
+
+.line {
+  position: absolute;
+  margin-right: 850px;
+  margin-top: 50px;
+
+  z-index: 5;
 }
 .main_text {
   color: #ececec;

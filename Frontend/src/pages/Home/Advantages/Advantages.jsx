@@ -5,17 +5,13 @@ import home from "../../../assets/icons/advantages/home.png";
 import corporate_laws from "../../../assets/icons/advantages/corporate-laws.png";
 import law from "../../../assets/icons/advantages/law.png";
 import secure_shield from "../../../assets/icons/advantages/secure-shield.png";
+import SectionImage from "../../../components/elements/SectionImage/SectionImage";
 
 function Advantages() {
   return (
     <>
-      <div
-        className={styles.box}
-        style={{
-          backgroundImage: "url(/images/AdvantagesBG.png)",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className={styles.container}>
+        <SectionImage image="Advantages"></SectionImage>
         <h1 className={styles.main_text}>Наши преимущества</h1>
 
         <h2 className={styles.second_text}>

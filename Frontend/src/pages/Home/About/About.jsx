@@ -1,15 +1,11 @@
 import styles from "./About.module.css";
+import SectionImage from "../../../components/elements/SectionImage/SectionImage";
 
 function About() {
   return (
     <>
-      <div
-        className={styles.box}
-        style={{
-          backgroundImage: "url(/images/AboutBG.png)",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className={styles.container}>
+        <SectionImage image="About"></SectionImage>
         <div className={styles.line}></div>
         <h1 className={styles.main_text}>о компании</h1>
 
