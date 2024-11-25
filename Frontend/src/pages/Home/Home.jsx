@@ -13,9 +13,10 @@ function HomePage() {
         <Header></Header>
         <TopSection></TopSection>
         <NavSection></NavSection>
-        <About></About>
-        <Advantages></Advantages>
+
         <WorkPlan></WorkPlan>
+        <Advantages></Advantages>
+        <About></About>
         <MainForm></MainForm>
       </main>
     </>
