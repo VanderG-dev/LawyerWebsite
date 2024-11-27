@@ -1,5 +1,8 @@
 .button {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 60px;
   background-color: #5552e8;
   border-radius: 7px;
@@ -16,8 +19,62 @@
   border: #ffffff6c solid 3px;
 }
 
-.button-text {
+.button_text {
   color: white;
   font-size: 24px;
   z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .button {
+    height: 45px;
+    margin-top: 15px;
+  }
+
+  .button_text {
+    font-size: 17px;
+  }
+}
+@media (max-width: 425px) {
+  .button {
+    height: 45px;
+    width: 270px;
+    margin-top: 15px;
+  }
+
+  .button_text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .button {
+    width: 70%;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  .button:hover {
+    width: 70%;
+  }
+
+  .button_text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .button {
+    width: 70%;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  .button:hover {
+    width: 70%;
+  }
+
+  .button_text {
+    font-size: 15px;
+  }
 }

@@ -37,8 +37,8 @@ header {
 .nav-text {
   color: white;
   -webkit-text-stroke: 0.5px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+
   z-index: 3;
 }
 
@@ -64,72 +64,49 @@ header {
   color: rgb(255, 255, 255);
 }
 
-.nav-second-button::before {
-  content: "";
-  position: absolute;
-  margin-top: 40px;
-  width: 0px;
-  height: 2px;
-  background: linear-gradient(to right, #2c00dd00, #a42db8, #2c00dd00);
-  transition: 0.2s;
+@media (max-width: 768px) {
+  .nav-box {
+    margin-left: 20px;
+  }
+  .second-nav-box {
+    right: 40px;
+  }
+  .nav-text {
+    font-size: 16px;
+  }
 }
 
-.nav-second-button:hover::before {
-  width: 90px;
+@media (max-width: 425px) {
+  .nav-box {
+    margin-left: 10px;
+  }
+  .second-nav-box {
+    right: 20px;
+  }
+  .nav-text {
+    font-size: 12px;
+  }
 }
 
-.nav-main-button::before {
-  content: "";
-  position: absolute;
-  margin-top: 40px;
-
-  width: 90px;
-  height: 2px;
-  background: linear-gradient(to right, #2c00dd00, #c207e3, #2c00dd00);
+@media (max-width: 375px) {
+  .nav-box {
+    margin-left: 10px;
+  }
+  .second-nav-box {
+    right: 20px;
+  }
+  .nav-text {
+    font-size: 12px;
+  }
 }
-
-.favorite-btn {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.search-btn {
-  margin-right: 5px;
-}
-
-.search-btn::before,
-.favorite-btn::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-radius: 30%;
-
-  z-index: -1;
-  background-color: #ffffff16;
-  transition: 0.2s;
-}
-
-.search-btn:hover::before,
-.favorite-btn:hover::before {
-  width: 45px;
-  height: 45px;
-}
-
-.nav-half-rounded {
-  width: 150px;
-
-  background: linear-gradient(to right, #3f3daf, #c143b5);
-  border-radius: 50px 0px 50px 0px;
-}
-
-.nav-half-rounded:hover {
-  border-radius: 0px 50px 0px 50px;
-}
-
-.nav-line {
-  margin-left: 15px;
-  height: 45px;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.159);
+@media (max-width: 320px) {
+  .nav-box {
+    margin-left: 10px;
+  }
+  .second-nav-box {
+    right: 20px;
+  }
+  .nav-text {
+    font-size: 12px;
+  }
 }

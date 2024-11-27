@@ -3,7 +3,7 @@ import styles from "./MainButton.module.css";
 function MainButton() {
   return (
     <button className={styles.button}>
-      <h1>Получить консультацию </h1>
+      <h1 className={styles.button_text}>Получить консультацию </h1>
     </button>
   );
 }

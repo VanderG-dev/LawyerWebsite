@@ -30,3 +30,50 @@
   font-size: 24px;
   z-index: 3;
 }
+
+@media (max-width: 768px) {
+  .button {
+    width: 30%;
+    height: 170px;
+  }
+  .text {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .button {
+    width: 30%;
+    height: 170px;
+  }
+  .text {
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    width: 44%;
+    height: 170px;
+  }
+  .text {
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .button {
+    width: 44%;
+    height: 170px;
+  }
+  .text {
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+  }
+}

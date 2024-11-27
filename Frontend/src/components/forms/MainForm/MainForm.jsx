@@ -16,23 +16,18 @@ function MainForm() {
           <input type="text" placeholder="Номер телефона" className={styles.form_input} />
           <input type="text" placeholder="Электронная почта" className={styles.form_input} />
           <input type="text" placeholder="Описание вашей проблемы" className={styles.form_input} />
-          <h2 className={styles.second_text}>Выберите форму получения юридической консультации:</h2>
-          <label>
-            <input type="checkbox" name="checkbox1" value="value1" />
-            Устно по номеру телефона
-          </label>
-          <label>
-            <input type="checkbox" name="checkbox1" value="value1" />
-            Письменно на электронную почту
-          </label>
-          <label>
-            <input type="checkbox" name="checkbox1" value="value1" />
-            Онлайн консультация
-          </label>
-          <label>
-            <input type="checkbox" name="checkbox1" value="value1" />
-            Письменно через месседжер
-          </label>
+          {/* <h2 className={styles.second_text}>Выберите форму получения юридической консультации:</h2> */}
+
+          <select className={styles.select} id="select" name="MainForm">
+            <option value="" disabled selected>
+              форма консультации
+            </option>
+            <option value="number"> Устно по номеру телефона</option>
+            <option value="email"> Письменно на электронную почту</option>
+            <option value="cherry"> Онлайн консультация</option>
+            <option value="date"> Письменно через месседжер</option>
+          </select>
+
           <MainButton></MainButton>
         </form>
       </div>

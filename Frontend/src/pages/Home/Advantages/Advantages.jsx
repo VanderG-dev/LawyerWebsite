@@ -19,51 +19,53 @@ function Advantages() {
           ответ на ваш вопрос и вы всегда сможете понять когда вас вводят в заблуждение!
         </h2>
 
-        <div className={styles.align}>
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={wallet} alt="wallet" />
+        <div className={styles.align_row}>
+          <div className={styles.align}>
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={wallet} alt="wallet" />
+              </div>
+              <h1 className={styles.circle_text}>консультация бесплатна</h1>
             </div>
-            <h1 className={styles.circle_text}>консультация бесплатна</h1>
+
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={balance} alt="balance" />
+              </div>
+              <h1 className={styles.circle_text}>Осуществим подбор судебной практики</h1>
+            </div>
+
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={home} alt="home" />
+              </div>
+              <h1 className={styles.circle_text}>Онлайн консультация</h1>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={balance} alt="balance" />
-            </div>
-            <h1 className={styles.circle_text}>Осуществим подбор судебной практики</h1>
-          </div>
+          <div className={styles.line}></div>
 
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={home} alt="home" />
+          <div className={styles.align}>
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={secure_shield} alt="secure_shield" />
+              </div>
+              <h1 className={styles.circle_text}>сахраняем Конфиденциальность</h1>
             </div>
-            <h1 className={styles.circle_text}>Онлайн консультация</h1>
-          </div>
-        </div>
 
-        <div className={styles.line}></div>
-
-        <div className={styles.align}>
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={corporate_laws} alt="corporate_laws" />
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={law} alt="law" />
+              </div>
+              <h1 className={styles.circle_text}>Помогли более 30 000 человек</h1>
             </div>
-            <h1 className={styles.circle_text}>Команда из 10 юристов</h1>
-          </div>
 
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={law} alt="law" />
+            <div className={styles.circle_align}>
+              <div className={styles.circle}>
+                <img src={corporate_laws} alt="corporate_laws" />
+              </div>
+              <h1 className={styles.circle_text}>Команда из 10 юристов</h1>
             </div>
-            <h1 className={styles.circle_text}>Помогли более 30 000 человек</h1>
-          </div>
-
-          <div className="flex flex-col items-center p-5">
-            <div className={styles.circle}>
-              <img src={secure_shield} alt="secure_shield" />
-            </div>
-            <h1 className={styles.circle_text}>сахраняем Конфиденциальность</h1>
           </div>
         </div>
       </div>
