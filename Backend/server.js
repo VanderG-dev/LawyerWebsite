@@ -7,7 +7,11 @@ require("dotenv").config(); // For environment variables
 const app = express();
 
 // Middleware
-app.use(cors()); // Enable CORS
+const corsOptions = {
+  origin: ["https://lawyerwebsite-synv.onrender.com"], // Update with frontend URLs
+  methods: ["GET", "POST"],
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.json()); // Parse JSON bodies
 
 // POST route for sending messages to Telegram
