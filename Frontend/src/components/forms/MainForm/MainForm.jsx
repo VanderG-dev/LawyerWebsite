@@ -15,10 +15,6 @@ function MainForm() {
   // const TOKEN = process.env.REACT_APP_TOKEN;
   //const CHAT_ID = process.env.REACT_APP_CHAT_ID;
 
-  const TOKEN = process.env.REACT_APP_TOKEN;
-  const CHAT_ID = process.env.REACT_APP_CHAT_ID;
-  const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -29,55 +25,28 @@ function MainForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form fields
-    if (!formData.name || !formData.email || !formData.number || !formData.problem) {
-      alert("Пожалуйста, заполните все поля.");
-      return;
-    }
-
-    // Construct the message with proper HTML formatting
-    let message = `<b>Заявка с сайта!</b>\n`;
-    message += `<b>Имя:</b> ${formData.name}\n`;
-    message += `<b>Почта:</b> ${formData.email}\n`;
-    message += `<b>Номер телефона:</b> ${formData.number}\n`;
-    message += `<b>Проблема:</b> ${formData.problem}\n`;
-    message += `<b>Форма консультации:</b> ${formData.consultationType}`;
-
-    // Send message to Telegram
-    fetch(URI_API, {
+    fetch("https://lawyerwebsite-backend.onrender.com/api/telegram", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        chat_id: CHAT_ID, // Required: Chat ID of the target chat
-        text: message, // Required: Text of the message
-        parse_mode: "HTML", // Optional: Enables HTML formatting
-      }),
+      body: JSON.stringify(formData), // Pass the form data to the backend
     })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
-        console.log("Message sent successfully:", data);
-        alert("Сообщение успешно отправлено!");
-        setFormData({
-          name: "",
-          email: "",
-          number: "",
-          problem: "",
-          consultationType: "DEFAULT",
-        }); // Reset form
+        if (data.success) {
+          console.log("Message sent successfully:", data.data);
+          alert("Your message has been sent!");
+        } else {
+          console.error("Error sending message:", data.error);
+          alert("Failed to send message.");
+        }
       })
       .catch((error) => {
-        console.error("Error sending message:", error);
-        alert("Произошла ошибка при отправке сообщения.");
+        console.error("Request error:", error);
+        alert("An error occurred. Please try again.");
       });
   };
-
   return (
     <>
       <div className={styles.box}>
