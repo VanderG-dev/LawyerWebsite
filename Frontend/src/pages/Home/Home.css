@@ -6,7 +6,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
+  height: -webkit-fill-available;
   z-index: 1;
 }
 
