@@ -66,6 +66,39 @@
   z-index: 3;
 }
 
+@media (max-width: 1024px) {
+  .main_text {
+    font-size: 35px;
+  }
+  .second_text {
+    font-size: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .sub_text {
+    font-size: 22px;
+    margin-top: 15px;
+    width: 70%;
+    max-width: 600px;
+  }
+  .sub_text_second {
+    font-size: 19px;
+    margin-top: 5px;
+
+    width: 70%;
+    max-width: 600px;
+  }
+  .line {
+    position: absolute;
+    margin-right: 1350px;
+    margin-top: 50px;
+
+    z-index: 5;
+  }
+}
+
 @media (max-width: 768px) {
   .main_text {
     font-size: 26px;

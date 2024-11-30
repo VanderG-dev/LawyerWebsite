@@ -33,7 +33,7 @@
 
 @media (max-width: 768px) {
   .button {
-    width: 30%;
+    width: 48%;
     height: 170px;
   }
   .text {
@@ -46,7 +46,7 @@
 
 @media (max-width: 425px) {
   .button {
-    width: 30%;
+    width: 48%;
     height: 170px;
   }
   .text {
