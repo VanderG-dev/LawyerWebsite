@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 const API_URL = import.meta.env.VITE_API_URL;
 
 import styles from "./ModalForm.module.css";
-import MainButton from "../../elements/MainButton/MainButton";
+import MainButton from "../../elements/Buttons/MainButton/MainButton";
 import SectionImage from "../../elements/SectionImage/SectionImage";
 
 function ModalForm({ switchModal }) {

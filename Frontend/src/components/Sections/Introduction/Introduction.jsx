@@ -1,8 +1,7 @@
-import "./Home.css";
-import MainButton from "../../components/elements/MainButton/MainButton.jsx";
+import "../../../pages/Home/Home.css";
+import MainButton from "../../elements/Buttons/MainButton/MainButton.jsx";
 import arrow from "/icons/main/arrow.png?url";
-import SectionImage from "../../components/elements/SectionImage/SectionImage";
-import MainForm from "../../components/forms/MainForm/MainForm.jsx";
+import SectionImage from "../../elements/SectionImage/SectionImage.jsx";
 
 function TopSection({ switchModal }) {
   return (

@@ -9,7 +9,7 @@ import WorkPlan from "../../components/Sections/WorkPlan/WorkPlan.jsx";
 import MainForm from "../../components/forms/MainForm/MainForm.jsx";
 import ModalForm from "../../components/forms/ModalForm/ModalForm.jsx";
 
-function HomePage() {
+function Offers() {
   const [isHidden, setIsHidden] = useState(true);
 
   const switchModal = () => {
@@ -32,4 +32,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Offers;
