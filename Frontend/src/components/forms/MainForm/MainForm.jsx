@@ -50,7 +50,7 @@ function MainForm() {
   };
   return (
     <>
-      <div className={styles.box}>
+      <div className={styles.container}>
         <SectionImage image="Form"></SectionImage>
         <form onSubmit={handleSubmit} className={styles.form}>
           <h1 className={styles.main_text}>Получить бесплатную консультацию</h1>

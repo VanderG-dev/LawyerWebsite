@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: ["https://lawyerwebsite-synv.onrender.com"], // Update with frontend URLs
+  origin: ["https://lawyerwebsite-synv.onrender.com", "http://localhost:5173"], // Update with frontend URLs
   methods: ["GET", "POST"],
 };
 app.use(cors(corsOptions));

@@ -1,8 +1,8 @@
 import styles from "./MainButton.module.css";
 
-function MainButton() {
+function MainButton({ onClick }) {
   return (
-    <button action="submit" className={styles.button}>
+    <button onClick={onClick} className={styles.button}>
       <h1 className={styles.button_text}>Получить консультацию </h1>
     </button>
   );

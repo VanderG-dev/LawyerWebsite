@@ -2,8 +2,9 @@ import "./Home.css";
 import MainButton from "../../components/elements/MainButton/MainButton.jsx";
 import arrow from "/icons/main/arrow.png?url";
 import SectionImage from "../../components/elements/SectionImage/SectionImage";
+import MainForm from "../../components/forms/MainForm/MainForm.jsx";
 
-function TopSection() {
+function TopSection({ switchModal }) {
   return (
     <>
       <div className="main-content-box">
@@ -13,7 +14,8 @@ function TopSection() {
           Проконсультируйтесь с экспертами в области права по вашей ситуации абсолютно безвозмездно,
           прежде чем совершать какие-либо финансовые операции с юристами!
         </h2>
-        <MainButton></MainButton>
+        <MainButton onClick={switchModal}></MainButton>
+
         <img className="arrow" src={arrow} alt="arrow" />
       </div>
     </>
