@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 import styles from "./MainForm.module.css";
 import MainButton from "../../elements/MainButton/MainButton";
@@ -25,7 +26,7 @@ function MainForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://lawyerwebsite-backend.onrender.com/api/telegram", {
+    fetch(`${API_URL}api/telegram`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
