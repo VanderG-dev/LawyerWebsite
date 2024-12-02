@@ -8,6 +8,7 @@ import Advantages from "../../components/Sections/Advantages/Advantages.jsx";
 import WorkPlan from "../../components/Sections/WorkPlan/WorkPlan.jsx";
 import MainForm from "../../components/forms/MainForm/MainForm.jsx";
 import ModalForm from "../../components/forms/ModalForm/ModalForm.jsx";
+import Footer from "../../layout/Footer/Footer.jsx";
 
 function HomePage() {
   const [isHidden, setIsHidden] = useState(true);
@@ -27,6 +28,7 @@ function HomePage() {
         <Advantages></Advantages>
         <About></About>
         <MainForm Modal={true}></MainForm>
+        <Footer></Footer>
       </main>
     </>
   );

@@ -1,0 +1,229 @@
+.container {
+  position: relative;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.main_text {
+  color: #645756;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.second_text {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #6b5f5f;
+  max-width: 700px;
+  text-align: center;
+  z-index: 3;
+}
+
+.list {
+  z-index: 4;
+  list-style-image: url("/icons/Nav/dot.png");
+}
+.list_element {
+  z-index: 4;
+  font-size: 20px;
+  margin-top: 5px;
+
+  color: #645756;
+
+  z-index: 3;
+}
+
+.align {
+  display: flex;
+
+  justify-content: center;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .main_text {
+    font-size: 27px;
+  }
+  .second_text {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main_text {
+    font-size: 23px;
+  }
+
+  .line {
+    height: 80%;
+    max-width: 800px;
+    width: 3px;
+  }
+
+  .second_text {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle_align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .circle_text {
+    width: 130px;
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .align_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+  }
+
+  .circle img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .main_text {
+    font-size: 23px;
+  }
+
+  .line {
+    height: 80%;
+    max-width: 800px;
+    width: 3px;
+  }
+
+  .second_text {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle_align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .circle_text {
+    width: 130px;
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .align_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+  }
+
+  .circle img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main_text {
+    font-size: 23px;
+  }
+
+  .line {
+    height: 80%;
+    max-width: 800px;
+    width: 3px;
+  }
+
+  .second_text {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle_align {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .circle_text {
+    width: 130px;
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .align_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+  }
+
+  .circle img {
+    width: 40px;
+    height: 40px;
+  }
+}

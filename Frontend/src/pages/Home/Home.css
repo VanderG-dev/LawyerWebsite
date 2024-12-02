@@ -53,28 +53,22 @@
   border-radius: 50%;
   padding: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.84);
+
   transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
-  backdrop-filter: blur(3px);
+
   margin-top: 90px;
   z-index: 3;
 }
 @keyframes float {
   0% {
     transform: translatey(0px);
-    backdrop-filter: blur(3px);
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.84);
   }
   50% {
-    transform: translatey(-20px);
-    backdrop-filter: blur(0px);
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(-25px);
   }
   100% {
     transform: translatey(0px);
-    backdrop-filter: blur(3px);
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.84);
   }
 }
 
