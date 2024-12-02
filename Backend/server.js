@@ -20,7 +20,7 @@ app.use(bodyParser.json()); // Parse JSON bodies
 app.use("/api", telegramRoutes); // Prefix all Telegram routes with /api
 
 // Serve static files from the React app
-const CLIENT_BUILD_PATH = path.join(__dirname, "Frontend", "dist");
+const CLIENT_BUILD_PATH = path.join(__dirname, "../Frontend/dist");
 app.use(express.static(CLIENT_BUILD_PATH));
 
 // Catch-all handler for React routes
