@@ -2,8 +2,9 @@ import "../../../pages/Home/Home.css";
 
 import arrow from "/icons/main/arrow.png?url";
 import SectionImage from "../../elements/SectionImage/SectionImage.jsx";
+import MainButton from "../../elements/Buttons/MainButton/MainButton.jsx";
 
-function TopSection() {
+function TopSection({ switchModal }) {
   return (
     <>
       <div className="main-content-box">
@@ -13,7 +14,7 @@ function TopSection() {
           Проконсультируйтесь с экспертами в области права по вашей ситуации абсолютно безвозмездно,
           прежде чем совершать какие-либо финансовые операции с юристами!
         </h2>
-
+        <MainButton onClick={switchModal}></MainButton>
         <img className="arrow" src={arrow} alt="arrow" />
       </div>
     </>
