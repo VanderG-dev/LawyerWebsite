@@ -17,8 +17,6 @@ function Nav() {
             services={service.services}
           />
         ))}
-
-        <NavButton text="Жилищные споры" icon="house.png" />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import styles from "./OfferInfo.module.css";
 import { useLocation } from "react-router-dom";
 
+import MainButton from "../../elements/Buttons/MainButton/MainButton";
 import SectionImage from "../../elements/SectionImage/SectionImage";
 
-function OfferInfo() {
+function OfferInfo({ switchModal }) {
   const location = useLocation();
   const { description, services } = location.state || {};
   return (
@@ -14,11 +15,17 @@ function OfferInfo() {
         <div className="z-10 flex flex-col">
           <ul className={styles.list}>
             {services.map((service, index) => (
-              <li key={index} className={styles.list_element}>
-                {service.name}
-              </li>
+              <div>
+                <li key={index} className={styles.list_element}>
+                  {service.name}
+                </li>
+                <h2>{service.description}</h2>
+              </div>
             ))}
           </ul>
+          <div className="flex justify-center">
+            <MainButton onClick={switchModal}></MainButton>
+          </div>
         </div>
       </div>
     </>

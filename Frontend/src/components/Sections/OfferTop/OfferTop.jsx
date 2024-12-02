@@ -2,9 +2,10 @@ import styles from "./OfferTop.module.css";
 import SectionImage from "../../../components/elements/SectionImage/SectionImage";
 import { useLocation } from "react-router-dom";
 
-function OfferTop() {
+function OfferTop({ switchModal }) {
   const location = useLocation();
   const { category, description, icon, BgImage } = location.state || {};
+
   return (
     <>
       <div className={styles.container}>
