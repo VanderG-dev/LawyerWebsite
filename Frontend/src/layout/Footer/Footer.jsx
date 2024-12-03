@@ -7,7 +7,7 @@ import whatsapp from "../../assets/icons/Footer/whatsapp.png";
 function Footer() {
   return (
     <>
-      <div className={styles.container}>
+      <footer className={styles.container}>
         <SectionImage image="TopSection"></SectionImage>
 
         <div className={styles.contacts}>
@@ -27,7 +27,7 @@ function Footer() {
           дни мы также можем отдыхать ведь консультируем вас совершенно бесплатно. Просим в случае
           задержки ответа отнестись с пониманием.
         </h2>
-      </div>
+      </footer>
     </>
   );
 }

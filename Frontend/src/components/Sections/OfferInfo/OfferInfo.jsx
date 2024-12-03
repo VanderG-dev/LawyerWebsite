@@ -1,12 +1,27 @@
 import styles from "./OfferInfo.module.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 import MainButton from "../../elements/Buttons/MainButton/MainButton";
 import SectionImage from "../../elements/SectionImage/SectionImage";
 
 function OfferInfo({ switchModal }) {
   const location = useLocation();
-  const { description, services } = location.state || {};
+  const navigate = useNavigate();
+  const { services = [] } = location.state || {};
+
+  // Use useEffect to redirect if services is empty
+  useEffect(() => {
+    if (services.length === 0) {
+      navigate("/"); // Redirect to home page
+    }
+  }, [services, navigate]);
+
+  // If redirect is triggered, don't render the component
+  if (services.length === 0) {
+    return null;
+  }
+
   return (
     <>
       <div className={styles.container}>

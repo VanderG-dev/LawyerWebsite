@@ -6,6 +6,7 @@ import Footer from "../../layout/Footer/Footer.jsx";
 import ModalForm from "../../components/forms/ModalForm/ModalForm.jsx";
 import OfferTop from "../../components/Sections/OfferTop/OfferTop.jsx";
 import OfferInfo from "../../components/Sections/OfferInfo/OfferInfo.jsx";
+import ScrollToTop from "../ScrollToTop.jsx";
 
 function Offers() {
   const [isHidden, setIsHidden] = useState(true);
@@ -16,13 +17,14 @@ function Offers() {
 
   return (
     <>
+      <Header></Header>
       <main>
-        <Header></Header>
+        <ScrollToTop></ScrollToTop>
         <OfferTop></OfferTop>
         {!isHidden && <ModalForm switchModal={switchModal}></ModalForm>}
         <OfferInfo switchModal={switchModal}></OfferInfo>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
     </>
   );
 }
