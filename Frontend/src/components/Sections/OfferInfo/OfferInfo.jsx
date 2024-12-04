@@ -26,7 +26,7 @@ function OfferInfo({ switchModal }) {
     <>
       <div className={styles.container}>
         <SectionImage image="OfferInfo"></SectionImage>
-        <h1 className={styles.main_text}>Наши услуги</h1>
+        <h2 className={styles.main_text}>Наши услуги</h2>
         <div className="z-10 flex flex-col">
           <ul className={styles.list}>
             {services.map((service, index) => (

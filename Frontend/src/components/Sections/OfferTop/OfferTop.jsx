@@ -14,7 +14,7 @@ function OfferTop({ switchModal }) {
         <div className={styles.text_container}>
           <div className={styles.image_align}>
             <img src={`/icons/Nav/${icon}`} alt="family" className={styles.image} />
-            <h1 className={styles.main_text}>{category}</h1>
+            <h2 className={styles.main_text}>{category}</h2>
           </div>
 
           <h2 className={styles.second_text}>{description}</h2>

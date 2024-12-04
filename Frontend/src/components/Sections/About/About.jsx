@@ -7,7 +7,7 @@ function About() {
       <div className={styles.container}>
         <SectionImage image="About"></SectionImage>
         <div className={styles.line}></div>
-        <h1 className={styles.main_text}>о компании</h1>
+        <h2 className={styles.main_text}>о компании</h2>
 
         <h2 className={styles.second_text}>
           Мы являемся командой профессиональных юристов из Нижнего Новгорода, обладающих более чем
