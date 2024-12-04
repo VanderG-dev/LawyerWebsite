@@ -2,21 +2,23 @@ import "../../layout/Header/Header.css";
 
 function Header() {
   return (
-    <>
-      <header>
-        <nav className="flex flex-row">
-          <div className="nav-box ">
-            <button className="nav-button ">
-              <h2 className="nav-text">Khlystov Group</h2>
-            </button>
-          </div>
-
-          <div className="second-nav-box">
-            <h2 className="nav-text">+7 (952) 461-69-31</h2>
-          </div>
+    <header>
+      <div className="flex flex-row">
+        <nav className="nav-box">
+          <ul className="nav-list">
+            <li>
+              <button className="nav-button" aria-label="Go to Khlystov Group homepage">
+                <span className="nav-text">Khlystov Group</span>
+              </button>
+            </li>
+          </ul>
         </nav>
-      </header>
-    </>
+
+        <div className="second-nav-box">
+          <p className="nav-text">+7 (952) 461-69-31</p>
+        </div>
+      </div>
+    </header>
   );
 }
 

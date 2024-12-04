@@ -19,8 +19,8 @@ function HomePage() {
 
   return (
     <>
+      <Header></Header>
       <main>
-        <Header></Header>
         <Introduction switchModal={switchModal}></Introduction>
         {!isHidden && <ModalForm switchModal={switchModal}></ModalForm>}
         <Nav></Nav>
@@ -28,8 +28,8 @@ function HomePage() {
         <Advantages></Advantages>
         <About></About>
         <MainForm Modal={true}></MainForm>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
     </>
   );
 }
