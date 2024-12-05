@@ -12,13 +12,17 @@ function Footer() {
 
         <div className={styles.contacts}>
           <button className={styles.button}>
-            <img src={telegram} alt="telegram" className={styles.contact_image} />
+            <a href="https://t.me/KhlystovNN">
+              <img src={telegram} alt="telegram" className={styles.contact_image} />
+            </a>
           </button>
           <button className={styles.button}>
             <img src={vk} alt="vk" className={styles.contact_image} />
           </button>
           <button className={styles.button}>
-            <img src={whatsapp} alt="whatsapp" className={styles.contact_image} />
+            <a href="https://wa.me/+79524616931">
+              <img src={whatsapp} alt="whatsapp" className={styles.contact_image} />
+            </a>
           </button>
         </div>
 

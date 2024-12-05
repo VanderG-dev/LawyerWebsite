@@ -9,28 +9,28 @@ function WorkPlan() {
         <SectionImage image="WorkPlan"></SectionImage>
 
         <img src={lineNumbers} alt="lineNumbers" className={styles.line} />
-        <h1 className={styles.main_text}>Как мы работаем</h1>
-        <h2 className={styles.second_text}>ознакомьтесь с этапами нашей работы</h2>
+        <h2 className={styles.main_text}>Как мы работаем</h2>
+        <p className={styles.second_text}>ознакомьтесь с этапами нашей работы</p>
 
-        <h1 className={styles.sub_text}>Получение заявки на бесплатную консультацию </h1>
-        <h2 className={styles.sub_text_second}>
+        <h2 className={styles.sub_text}>Получение заявки на бесплатную консультацию </h2>
+        <p className={styles.sub_text_second}>
           Наиболее подробнее опишите вашу проблему и ее срочность для очередности подготовки
           консультации.
-        </h2>
+        </p>
 
-        <h1 className={styles.sub_text}>Уточнение необходимых данных и документов </h1>
-        <h2 className={styles.sub_text_second}>
+        <h2 className={styles.sub_text}>Уточнение необходимых данных и документов </h2>
+        <p className={styles.sub_text_second}>
           В случае если нам необходима дополнительная информация или иные документы для наиболее
           правильной и полной консультации, профильный юрист свяжется с вами удобным для вас
           способом.
-        </h2>
+        </p>
 
-        <h1 className={styles.sub_text}>Передача бесплатной консультации вам</h1>
-        <h2 className={styles.sub_text_second}>
+        <h2 className={styles.sub_text}>Передача бесплатной консультации вам</h2>
+        <p className={styles.sub_text_second}>
           Укажите заранее в каком формате (письменно отдельным файлом на электронную почту, онлайн
           консультацией, устно по телефону, текстом в любой указанный вами месседжер) хотите
           получить ответ.
-        </h2>
+        </p>
       </div>
     </>
   );
