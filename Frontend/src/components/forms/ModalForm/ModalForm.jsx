@@ -55,10 +55,10 @@ function ModalForm({ switchModal }) {
         <div className={styles.container}>
           <SectionImage image="Form"></SectionImage>
           <form onSubmit={handleSubmit} className={styles.form}>
-            <h1 className={styles.main_text}>Получить бесплатную консультацию</h1>
+            <h1 className={styles.main_text}>Получите бесплатную консультацию!</h1>
             <h2 className={styles.second_text}>
-              Заполните необходимые поля, опишите вашу проблему и выберите форму бесплатной
-              юридической консультации.
+              Заполните простую форму, опишите свою проблему и выберите удобный формат для
+              консультации.
             </h2>
             <input
               type="text"

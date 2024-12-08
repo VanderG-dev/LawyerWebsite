@@ -21,7 +21,6 @@ function HomePage() {
     <>
       <Header></Header>
       <main>
-        <h1 className="visually-hidden">Центр бесплатных юридических консультаций</h1>
         <Introduction switchModal={switchModal}></Introduction>
         {!isHidden && <ModalForm switchModal={switchModal}></ModalForm>}
         <Nav></Nav>
