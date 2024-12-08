@@ -32,3 +32,8 @@ button {
   height: 30px;
   cursor: pointer;
 }
+
+.h1-hidden {
+  position: absolute;
+  color: #13121a00;
+}
