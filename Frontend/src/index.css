@@ -33,7 +33,12 @@ button {
   cursor: pointer;
 }
 
-.h1-hidden {
+.h1-seo {
+  position: absolute;
+  color: #13121a00;
+}
+
+.content-seo {
   position: absolute;
   color: #13121a00;
 }
