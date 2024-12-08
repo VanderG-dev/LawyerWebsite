@@ -14,6 +14,10 @@ function ModalForm({ switchModal }) {
     consultationType: "DEFAULT",
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+  const [isError, setIsError] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -24,27 +28,40 @@ function ModalForm({ switchModal }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
+    setResponseMessage(""); // Clear previous messages
 
     fetch(`${API_URL}api/telegram`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData), // Pass the form data to the backend
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          console.log("Message sent successfully:", data.data);
-          alert("Your message has been sent!");
+          setResponseMessage(data.message);
+          setIsError(false);
+          setFormData({
+            name: "",
+            email: "",
+            number: "",
+            problem: "",
+            consultationType: "DEFAULT",
+          });
         } else {
-          console.error("Error sending message:", data.error);
-          alert("Failed to send message.");
+          setResponseMessage(` ${data.message || "Не удалось отправить сообщение"}`);
+          setIsError(true);
         }
       })
       .catch((error) => {
         console.error("Request error:", error);
-        alert("An error occurred. Please try again.");
+        setResponseMessage("Произошла ошибка, попробуйте еще раз.");
+        setIsError(true);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -107,7 +124,12 @@ function ModalForm({ switchModal }) {
               <option value="Мессенджер"> Письменно через мессенджер</option>
             </select>
 
-            <MainButton></MainButton>
+            {responseMessage && (
+              <p className={isError ? styles.error_message : styles.success_message}>
+                {responseMessage}
+              </p>
+            )}
+            <MainButton text={isLoading ? "отправка..." : "Получить консультацию"} />
           </form>
         </div>
       </div>
