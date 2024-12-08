@@ -27,42 +27,46 @@ function MainForm() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setResponseMessage(""); // Clear previous messages
+    if (!isLoading) {
+      e.preventDefault();
+      setIsLoading(true);
+      setResponseMessage(""); // Clear previous messages
 
-    fetch(`${API_URL}api/telegram`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          setResponseMessage(data.message);
-          setIsError(false);
-          setFormData({
-            name: "",
-            email: "",
-            number: "",
-            problem: "",
-            consultationType: "DEFAULT",
-          });
-        } else {
-          setResponseMessage(` ${data.message || "Не удалось отправить сообщение"}`);
+      fetch(`${API_URL}api/telegram`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            setResponseMessage(data.message);
+            setIsError(false);
+            setFormData({
+              name: "",
+              email: "",
+              number: "",
+              problem: "",
+              consultationType: "DEFAULT",
+            });
+          } else {
+            setResponseMessage(` ${data.message || "Не удалось отправить сообщение"}`);
+            setIsError(true);
+          }
+        })
+        .catch((error) => {
+          console.error("Request error:", error);
+          setResponseMessage("Произошла ошибка, попробуйте еще раз.");
           setIsError(true);
-        }
-      })
-      .catch((error) => {
-        console.error("Request error:", error);
-        setResponseMessage("Произошла ошибка, попробуйте еще раз.");
-        setIsError(true);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    } else {
+      setResponseMessage("Подождите немного перед отправкой сообщения!");
+    }
   };
 
   return (

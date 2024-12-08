@@ -1,12 +1,21 @@
 const express = require("express");
 const axios = require("axios");
+const rateLimit = require("express-rate-limit");
 require("dotenv").config();
 
 const router = express.Router();
 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // Limit each IP to 5 requests per windowMs
+  message: {
+    success: false,
+    message: "Слишком много запросов с этого IP, попробуйте снова через 15 минут.",
+  },
+});
+
 // POST route for sending messages to Telegram
-// POST route for sending messages to Telegram
-router.post("/telegram", async (req, res) => {
+router.post("/telegram", limiter, async (req, res) => {
   let { name, email, number, problem, consultationType } = req.body;
 
   // Validation
