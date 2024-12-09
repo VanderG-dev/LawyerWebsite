@@ -16,7 +16,9 @@ header {
   height: 60px;
   border-radius: 20px;
 }
-
+.phone-number {
+  margin-right: 10px;
+}
 .second-nav-box {
   display: flex;
   flex-direction: row;

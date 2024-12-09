@@ -40,5 +40,7 @@ button {
 
 .content-seo {
   position: absolute;
+  height: 0px;
+  font-size: 0px;
   color: #13121a00;
 }

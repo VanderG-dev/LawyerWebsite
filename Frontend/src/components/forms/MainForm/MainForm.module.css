@@ -121,11 +121,13 @@
     font-size: 17px;
   }
   .form_input {
+    width: 90%;
     height: 35px;
     font-size: 15px;
   }
 
   .select {
+    width: 90%;
     max-width: 500px;
   }
 }

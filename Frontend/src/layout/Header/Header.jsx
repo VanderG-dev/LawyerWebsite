@@ -15,6 +15,7 @@ function Header() {
         </nav>
 
         <div className="second-nav-box">
+          <img src="/icons/Nav/call.png" alt="call" width="32px" className="phone-number" />
           <p className="nav-text">+7 (952) 461-69-31</p>
         </div>
       </div>

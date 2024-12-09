@@ -23,6 +23,27 @@
   color: #575757;
 }
 
+.closeBTN {
+  position: absolute;
+  top: -20px;
+  background-color: rgba(42, 42, 42, 0);
+  border: 3px rgba(0, 0, 0, 0) solid;
+  border-radius: 15px;
+  font-size: 30px;
+  width: 120px;
+  height: 50px;
+  line-height: 0px;
+  color: rgba(0, 0, 0, 0.462);
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.closeBTN:hover {
+  border: 3px rgba(0, 0, 0, 0.171) solid;
+  border-radius: 15px;
+  color: rgba(2, 2, 2, 0.859);
+}
+
 .success_message {
   color: green;
   font-size: 20px;
@@ -69,6 +90,7 @@
   z-index: 90;
 }
 .container {
+  position: relative;
   width: 600px;
   height: 600px;
   display: flex;
@@ -155,7 +177,7 @@
   }
 
   .select {
-    max-width: 500px;
+    max-width: 900px;
   }
 
   .container > div {

@@ -6,11 +6,11 @@ require("dotenv").config();
 const router = express.Router();
 
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 requests per windowMs
+  windowMs: 30 * 60 * 1000, // 15 minutes
+  max: 3, // Limit each IP to 5 requests per windowMs
   message: {
     success: false,
-    message: "Слишком много запросов с этого IP, попробуйте снова через 15 минут.",
+    message: "Слишком много запросов с этого IP, попробуйте снова через 30 минут.",
   },
 });
 
