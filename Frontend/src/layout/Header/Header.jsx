@@ -1,15 +1,19 @@
 import "../../layout/Header/Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <div className="flex flex-row">
+      <div className="flex flex-row mt-3">
         <nav className="nav-box">
           <ul className="nav-list">
             <li>
-              <button className="nav-button" aria-label="Go to Khlystov Group homepage">
-                <span className="nav-text">Khlystov Group</span>
-              </button>
+              <Link to="/">
+                <button className="nav-button" aria-label="Go to Khlystov Group homepage">
+                  <img src="/logo.jpg" alt="logo" width="48px " className="logo mr-4" />
+                  <span className="nav-text">Khlystov Group</span>
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>

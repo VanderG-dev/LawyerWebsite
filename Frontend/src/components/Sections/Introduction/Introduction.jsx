@@ -9,7 +9,8 @@ function TopSection({ switchModal }) {
     <>
       <div className="main-content-box">
         <SectionImage image="TopSection"></SectionImage>
-        <h1 className="main-text">Бесплатная юридическая консультация в Нижнем Новгороде</h1>
+
+        <h1 className="main-text mt-10">Бесплатная юридическая консультация в Нижнем Новгороде</h1>
         <h2 className="main-second-text">
           Есть юридические вопросы? Не переживайте, мы здесь, чтобы помочь! Получите бесплатную
           юридическую консультацию и узнайте всё, что вас интересует, без каких-либо затрат! Наша
