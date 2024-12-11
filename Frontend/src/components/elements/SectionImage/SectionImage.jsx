@@ -5,10 +5,10 @@ function SectionImage({ image }) {
     <div
       className={styles.section_image}
       style={{
-        backgroundImage: `url(/images/${image}.png)`,
+        backgroundImage: `url(/images/${image}.webp)`, // Use inline background image
         backgroundSize: "cover",
       }}
-    ></div>
+    />
   );
 }
 

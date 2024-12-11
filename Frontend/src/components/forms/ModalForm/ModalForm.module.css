@@ -65,6 +65,14 @@
   width: 768px;
   height: 680px;
 }
+.container::before {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  background-color: white;
+  border-radius: 20px;
+}
 
 .ModalBackground {
   position: fixed;

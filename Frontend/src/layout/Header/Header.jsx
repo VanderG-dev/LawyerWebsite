@@ -11,7 +11,7 @@ function Header() {
               <Link to="/">
                 <button className="nav-button" aria-label="Go to Khlystov Group homepage">
                   <img src="/logo.jpg" alt="logo" width="48px " className="logo mr-4" />
-                  <span className="nav-text">Khlystov Group</span>
+                  <span className="nav-text">Юридическая компания</span>
                 </button>
               </Link>
             </li>
