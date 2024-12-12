@@ -4,7 +4,7 @@ import SectionImage from "../../../components/elements/SectionImage/SectionImage
 function About() {
   return (
     <>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <SectionImage image="About"></SectionImage>
         <div className={styles.line}></div>
         <h2 className={styles.main_text}>О нас</h2>
@@ -20,7 +20,7 @@ function About() {
           бесплатно. Не теряйте время на ненужные встречи и поездки! Звоните нам или нажмите кнопку
           "Получить консультацию" , и мы поможем вам прямо сейчас.
         </h2>
-      </div>
+      </section>
     </>
   );
 }

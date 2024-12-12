@@ -5,7 +5,7 @@ import SectionImage from "../../../components/elements/SectionImage/SectionImage
 function WorkPlan() {
   return (
     <>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <SectionImage image="WorkPlan"></SectionImage>
 
         <img src={lineNumbers} alt="lineNumbers" className={styles.line} />
@@ -27,7 +27,7 @@ function WorkPlan() {
         <p className={styles.sub_text_second}>
           В кратчайшие сроки вы получите ответ в выбранном вами формате. Мы на связи круглосуточно!
         </p>
-      </div>
+      </section>
     </>
   );
 }

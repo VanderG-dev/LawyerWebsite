@@ -7,7 +7,7 @@ import MainButton from "../../elements/Buttons/MainButton/MainButton.jsx";
 function TopSection({ switchModal }) {
   return (
     <>
-      <div className="main-content-box">
+      <section className="main-content-box">
         <SectionImage image="TopSection"></SectionImage>
 
         <h1 className="main-text mt-10">Бесплатная юридическая консультация в Нижнем Новгороде</h1>
@@ -19,7 +19,7 @@ function TopSection({ switchModal }) {
         </h2>
         <MainButton onClick={switchModal}></MainButton>
         <img className="arrow" src={arrow} alt="arrow" />
-      </div>
+      </section>
     </>
   );
 }

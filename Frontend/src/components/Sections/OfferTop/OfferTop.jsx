@@ -1,23 +1,23 @@
 import styles from "./OfferTop.module.css";
 import SectionImage from "../../../components/elements/SectionImage/SectionImage";
-import { useLocation } from "react-router-dom";
 
-function OfferTop({ switchModal }) {
-  const location = useLocation();
-  const { category, description, icon, BgImage } = location.state || {};
-
+function OfferTop({ service }) {
   return (
     <>
       <div className={styles.container}>
-        <SectionImage image={BgImage}></SectionImage>
+        <SectionImage image={service.BgImage}></SectionImage>
 
         <div className={styles.text_container}>
           <div className={styles.image_align}>
-            <img src={`/icons/Nav/${icon}`} alt="family" className={styles.image} />
-            <h2 className={styles.main_text}>{category}</h2>
+            <img
+              src={`/icons/Nav/${service.icon}.png`}
+              alt={service.icon}
+              className={styles.image}
+            />
+            <h2 className={styles.main_text}>{service.category}</h2>
           </div>
 
-          <h2 className={styles.second_text}>{description}</h2>
+          <h2 className={styles.second_text}>{service.description}</h2>
         </div>
       </div>
     </>

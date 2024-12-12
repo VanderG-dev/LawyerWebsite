@@ -9,7 +9,7 @@
   background-color: #f6f6f6;
   border: solid 3px #e3e3e3;
   margin: 3px;
-
+  overflow: hidden;
   z-index: 3;
   transition: 0.5s;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0);
@@ -35,53 +35,85 @@
 
 .text {
   color: #6b5f5f;
-  font-size: 24px;
+  font-size: 22px;
   z-index: 3;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    height: 30px;
+  }
+  .image {
+    width: 64px;
+  }
 }
 
 @media (max-width: 768px) {
   .button {
-    width: 48%;
-    height: 170px;
+    width: 30%;
+    height: 130px;
   }
   .text {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 14px;
+
     font-weight: bold;
     height: 30px;
+  }
+  .image {
+    width: 48px;
   }
 }
 
 @media (max-width: 425px) {
   .button {
-    width: 48%;
-    height: 170px;
+    width: 30%;
+    height: 130px;
   }
   .text {
-    font-size: 15px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-weight: bold;
     height: 30px;
+  }
+  .image {
+    width: 48px;
   }
 }
 @media (max-width: 375px) {
   .button {
-    width: 44%;
-    height: 170px;
+    height: 120px;
   }
   .text {
-    font-size: 15px;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-weight: bold;
-    height: 30px;
+    height: 40px;
+  }
+  .image {
+    width: 40px;
   }
 }
 @media (max-width: 320px) {
   .button {
-    width: 44%;
-    height: 170px;
+    width: 30%;
+    height: 100px;
   }
   .text {
-    font-size: 15px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-weight: bold;
-    height: 30px;
+    height: 35px;
+  }
+  .image {
+    width: 32px;
   }
 }

@@ -8,7 +8,7 @@ import OfferTop from "../../components/Sections/OfferTop/OfferTop.jsx";
 import OfferInfo from "../../components/Sections/OfferInfo/OfferInfo.jsx";
 import ScrollToTop from "../ScrollToTop.jsx";
 
-function Offers() {
+function Offers({ service }) {
   const [isHidden, setIsHidden] = useState(true);
 
   const switchModal = () => {
@@ -20,9 +20,9 @@ function Offers() {
       <Header></Header>
       <main>
         <ScrollToTop></ScrollToTop>
-        <OfferTop></OfferTop>
+        <OfferTop service={service}></OfferTop>
         {!isHidden && <ModalForm switchModal={switchModal}></ModalForm>}
-        <OfferInfo switchModal={switchModal}></OfferInfo>
+        <OfferInfo switchModal={switchModal} service={service}></OfferInfo>
       </main>
       <Footer></Footer>
     </>

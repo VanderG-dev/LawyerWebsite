@@ -12,7 +12,6 @@
   height: 45px;
   width: 100%;
   max-width: 500px;
-
   background-color: #ffffff63;
   border: 2px solid rgba(0, 0, 0, 0.751);
   border-radius: 5px;
@@ -21,10 +20,25 @@
   padding-left: 15px;
   font-size: 20px;
   margin-top: 10px;
+  transition: 0.7s;
+}
+
+.form_input:hover {
+  background-color: #fdfdfd;
+  color: rgb(8, 8, 8);
 }
 
 .form_input::placeholder {
   color: #575757;
+}
+.form_input:focus {
+  background-color: #2f2c31;
+  color: white;
+  outline: none;
+  border-radius: 0px;
+}
+.form_input:focus::placeholder {
+  color: #ffffff;
 }
 
 .success_message {
@@ -36,10 +50,10 @@
 }
 
 .error_message {
-  color: rgb(211, 69, 69);
-  font-size: 20px;
+  color: rgb(128, 62, 62);
+  font-size: 18px;
   font-weight: bold;
-
+  text-align: center;
   height: 0px;
 }
 .container {
@@ -52,6 +66,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   z-index: 1;
 }
 .container::before {
@@ -137,6 +152,9 @@
     width: 90%;
     max-width: 500px;
   }
+  .error_message {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -158,6 +176,9 @@
   .select {
     width: 80%;
     max-width: 500px;
+  }
+  .error_message {
+    font-size: 15px;
   }
 }
 
@@ -181,6 +202,10 @@
     width: 80%;
     max-width: 500px;
   }
+  .error_message {
+    font-size: 14px;
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -202,5 +227,9 @@
   .select {
     width: 80%;
     max-width: 500px;
+  }
+  .error_message {
+    font-size: 14px;
+    max-width: 200px;
   }
 }

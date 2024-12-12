@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100dvh;
-
+  overflow: hidden;
   z-index: 1;
 }
 .visually-hidden {
@@ -137,12 +137,12 @@
 @media (max-width: 425px) {
   .main-text {
     font-size: 20px;
-    width: 70%;
+    width: 90%;
   }
 
   .main-second-text {
     font-size: 14px;
-    width: 70%;
+    width: 90%;
   }
 
   .arrow {

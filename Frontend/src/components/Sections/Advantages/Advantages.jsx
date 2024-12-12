@@ -11,7 +11,7 @@ import Li from "../../elements/Li/Li";
 function Advantages() {
   return (
     <>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <SectionImage image="Advantages"></SectionImage>
         <h2 className={styles.main_text}>Почему выбирают нас?</h2>
         <ul className={styles.ul}>
@@ -54,7 +54,7 @@ function Advantages() {
             styles={styles}
           />
         </ul>
-      </div>
+      </section>
     </>
   );
 }
