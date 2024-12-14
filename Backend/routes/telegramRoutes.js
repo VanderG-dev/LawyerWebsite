@@ -3,11 +3,16 @@ const axios = require("axios");
 const rateLimit = require("express-rate-limit");
 require("dotenv").config();
 
+const app = express(); // Initialize the app
 const router = express.Router();
 
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 const limiter = rateLimit({
-  windowMs: 30 * 60 * 1000, // 15 minutes
-  max: 3, // Limit each IP to 5 requests per windowMs
+  windowMs: 30 * 60 * 1000,
+  max: 3,
   message: {
     success: false,
     message: "Слишком много запросов с этого IP, попробуйте снова через 30 минут.",
